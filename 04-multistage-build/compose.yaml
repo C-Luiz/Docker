@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  converter:
+    build: .
+    volumes:
+      - .:/videos
+    working_dir: /videos
+    command: ["input.mp4", "avi"]
+

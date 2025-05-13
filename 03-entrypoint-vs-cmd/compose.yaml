@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ffmpeg:
+    build: .
+    volumes:
+      - .:/data
+    working_dir: /data
+    command: ["input.mp4", "avi"]
+
